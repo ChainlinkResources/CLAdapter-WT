@@ -19,8 +19,8 @@ zip -r FSmarket.zip
 
 ### Docker
 ```bash
-docker build . -t FSmarket
-docker run --name FSmarket -p 8080:8080 -e API_KEY=<YOUR_API_KEY> FSmarket
+docker build . -t fsmarket
+docker run --name fsmarket -p 8080:8080 -e API_KEY=<YOUR_API_KEY> fsmarket
 ```
 
 This will run the adapter at http://localhost:8080.
