@@ -3,19 +3,18 @@ const request = require("request");
 const createRequest = (input, callback) => {
 
 	// Create the URL for the request
-	let url = "https://api.openweathermap.org/data/2.5/";
-	let endpoint = input.data.endpoint || "weather"
+	let url = "https://api.worldtradingdata.com/api/v1/";
+	let endpoint = input.data.endpoint || "stock"
 	url = url + endpoint
 
 	// Create request params
-	const cityID = input.data.cityID || "7839562"; // Default to Brisbane if no city ID provided
-	const numDays = input.data.days || "1" // Default to 1 day if no number of days provided
+	const stockSymbol = input.data.stockSymbol || "AMZN"; //Test Stock Symbol
 
-	// Build your query object with the given input params, for example:
+
+	// Query Object request stock symbol data:
 	let queryObj = {
-		id: cityID,
-		cnt: numDays,
-		APPID: process.env.API_KEY
+		symbol: stockSymbol,
+		api_token: process.env.API_KEY   ///api stored in .env file
 	}
 
 	// Use this to clean up unused input parameters

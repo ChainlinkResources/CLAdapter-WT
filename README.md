@@ -1,6 +1,9 @@
-# Secure Data Links Open Weather Adaptor
+# ////FourSwords WorldTraderData Chainlink External Adapter
+https://www.worldtradingdata.com/documentation
 
-This adaptor allows nodes to support the Open Weather API (https://openweathermap.org/api). It was built using the Chainlink NodeJS Template available at https://github.com/thodges-gh/CL-EA-NodeJS-Template.
+
+
+It was built using the Chainlink NodeJS Template available at https://github.com/thodges-gh/CL-EA-NodeJS-Template.
 
 ## Setup
 
@@ -10,17 +13,17 @@ npm install
 ```
 
 ```bash
-zip -r open-weather-ea.zip
+zip -r FSmarket.zip
 ```
 
 
 ### Docker
 ```bash
-docker build . -t openweatheradaptor
-docker run --name openweatheradaptor -p 5000:80 -e PORT=80 -e API_KEY=<YOUR_API_KEY> openweatheradaptor
+docker build . -t FSmarket
+docker run --name FSmarket -p 8080:8080 -e API_KEY=<YOUR_API_KEY> FSmarket
 ```
 
-This will run the adapter at http://localhost:5000.
+This will run the adapter at http://localhost:8080.
 
 ### Install to AWS Lambda
 
@@ -50,37 +53,11 @@ This will run the adapter at http://localhost:5000.
   - VALUE: Your_API_key
 
 ## Parameters
-The following API endpoints are supported with the related parameters. Note CityId is a ID specific to the Open Weather API. To Find the CityID for any city, visit http://bulk.openweathermap.org/sample/city.list.json.gz
+The following API endpoints are supported with the related parameters
 
-- Current Weather Data
-    - Endpoint: weather
-    - Params
-        - CityId: The City ID to get data for
+endpoint: stock
 
-- Forcasted Weather Data
-    - Endpoint: forecast
-    - Params
-        - CityId: The City ID to get data for
-        - Days: The number of days to get data for (up to 5 days)
-
-The following premium API endpoints are also supported
-
-- Forcasted Weather Data (Hourly)
-    - Endpoint: forecast/hourly
-    - Params
-        - CityId: The City ID to get data for
-        - Days: The number of days to get data for (up to 4 days)
-
-- Forcasted Weather Data (16 Days)
-    - Endpoint: forecast/daily
-    - Params
-        - CityId: The City ID to get data for
-        - Days: The number of days to get data for (up to 16 days)
-
-- Climate Forecast Weather Data (Month)
-    - Endpoint: climate/monthly
-    - Params
-        - CityId: The City ID to get data for
+symbol: enter any stock market unique symbol to retrieve data.
 
 ## Testing
 ```bash
