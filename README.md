@@ -1,4 +1,4 @@
-# ////FourSwords WorldTraderData Chainlink External Adapter
+# //// WorldTraderData Chainlink External Adapter
 https://www.worldtradingdata.com/documentation
 
 
