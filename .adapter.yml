@@ -9,5 +9,5 @@ data_sources:
   - name: WorldTradingData
     url: https://www.worldtradingdata.com/documentation
 parameters:
-  - endpoint stock
-  - symbol stock symbol
+  - api_token
+  - symbol
