@@ -1,14 +1,13 @@
-name: Open Weather External Adapter
-description: Chainlink External Adaptor for the Open Weather API
-node_identifier: SDL
+name: World Trade Data External Adapter
+description: Chainlink External Adaptor for the World Trade Data API
+node_identifier: FS
 platforms:
   - Docker
   - AWS Lambda
   - GCP Functions
 data_sources:
-  - name: OpenWeather
-    url: https://openweathermap.org/
+  - name: WorldTradingData
+    url: https://www.worldtradingdata.com/documentation
 parameters:
-  - endpoint
-  - cityID
-  - days
+  - endpoint stock
+  - symbol stock symbol
