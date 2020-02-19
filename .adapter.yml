@@ -1,6 +1,6 @@
 name: MarketTradingData
 description: Chainlink External Adaptor for the World Trade Data API
-node_identifier: ////
+node_identifier: Fourswords
 platforms:
   - Docker
   - AWS Lambda
