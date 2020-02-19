@@ -1,4 +1,4 @@
-name: CLAdapter-WT
+name: Market Trading External Adapter
 description: Market Trading Data Stock market
 node_identifier: fsmarket
 platforms:
@@ -9,5 +9,6 @@ data_sources:
   - name: WorldTradingData
     url: https://www.worldtradingdata.com/documentation
 parameters:
+  - enpoint
   - api_token
   - symbol
