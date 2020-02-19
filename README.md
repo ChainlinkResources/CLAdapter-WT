@@ -34,7 +34,7 @@ This will run the adapter at http://localhost:8080.
   - Choose an existing role or create a new one
   - Click Create Function
 - Under Function code, select "Upload a .zip file" from the Code entry type drop-down
-- Click Upload and select the `open-weather-ea.zip` file
+- Click Upload and select the `fsmarket.zip` file
 - Handler should remain index.handler
 - Add the environment variable (repeat for all environment variables):
   - Key: API_KEY
@@ -45,7 +45,7 @@ This will run the adapter at http://localhost:8080.
 ###  Install to GCP
 
 - In Functions, create a new function, choose to ZIP upload
-- Click Browse and select the `open-weather-ea.zip` file
+- Click Browse and select the `fsmarket.zip` file
 - Select a Storage Bucket to keep the zip in
 - Function to execute: gcpservice
 - Click More, Add variable (repeat for all environment variables)
