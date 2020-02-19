@@ -1,5 +1,5 @@
-name: Market Trading Adapter
-description: Chainlink External Adaptor for the World Trading Data API
+name: CLAdapter-WT
+description: Market Trading Data Stock market
 node_identifier: fsmarket
 platforms:
   - Docker
