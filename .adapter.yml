@@ -1,6 +1,6 @@
-name: markettradingadapter
-description: Chainlink External Adaptor for the World Trade Data API
-node_identifier: fourswords
+name: Market Trading Adapter
+description: Chainlink External Adaptor for the World Trading Data API
+node_identifier: fsmarket
 platforms:
   - Docker
   - AWS Lambda
